@@ -3,33 +3,42 @@
 
 :root {
   --font-s: Outfit;
+  --white: white;
+  --light-blue: hsl(212, 45%, 89%);
+  --dark-blue: hsl(218, 44%, 22%);
+  --gray: hsl(216, 15%, 48%);
 }
 
 * {
   margin: 0px;
   padding: 0px;
+
+  font-family: var(--font-s);
 }
 
 body {
-  background-color: hsl(212, 45%, 89%);
-  position: relative;
+  background-color: var(--light-blue);
   height: 100vh;
+
+  /* New way to centralize. Thx Bernardo!*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-div {
-  background-color: white;
-  margin: auto;
-  width: 260px;
+main {
+  background-color: var(--white);
+  width: 250px;
   text-align: center;
   border-radius: 15px;
   padding: 15px;
 
+  /* Old way to centralize
+  margin: auto;
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%);
-
-  font-family: var(--font-s);
+  transform: translate(-50%, -50%); */
 }
 
 img {
@@ -38,15 +47,16 @@ img {
   border-radius: 10px;
 }
 
-h3 {
+h1 {
+  font-size: 1.2rem;
   font-weight: 700;
-  margin: 20px;
-  color: hsl(218, 44%, 22%);
+  margin: 20px 0px;
+  color: var(--dark-blue);
 }
 
 p {
   font-weight: 400;
-  font-size: 15px;
-  color: hsl(216, 15%, 48%);
+  font-size: 0.9rem;
+  color: var(--gray);
   margin-bottom: 30px;
 }

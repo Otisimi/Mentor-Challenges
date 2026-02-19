@@ -71,7 +71,7 @@ a:hover {
 }
 
 p#info {
-  font-size: 1rem;
+  font-size: 0.95rem;
   font-weight: 500;
   color: var(--grey);
   margin: 0px 0px 25px 0px;

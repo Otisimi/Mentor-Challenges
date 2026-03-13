@@ -6,4 +6,4 @@ Repository to store and show challenges completed on Frontend Mentor
 
 ### <a href="https://otisimi.github.io/Mentor-Challenges/qr-code-component-main/index.html" target="_blank">1 - QR Code component</a>
 ### <a href="https://otisimi.github.io/Mentor-Challenges/blog-preview-card-main/index.html" target="_blank">2 - Preview Card</a>
-### <a href="https://otisimi.github.io/Mentor-Challenges/social-links-profile-main/index.html" target="_blank">2 - Preview Card</a>
+### <a href="https://otisimi.github.io/Mentor-Challenges/social-links-profile-main/index.html" target="_blank">2 - Social Links Page</a>

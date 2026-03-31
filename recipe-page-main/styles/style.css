@@ -23,22 +23,31 @@
   --Brown-800: hsl(14, 45%, 36%);
   --Rose-800: hsl(332, 51%, 32%);
   --Rose-50: hsl(330, 100%, 98%);
+  --Young: YoungSerif;
+  --Outfit: Outfit;
 }
 
 * {
   margin: 0px;
   padding: 0px;
-  font-family: Outfit;
 }
 
-body{
-    display: flex;
-    justify-content: center;
+body {
+  justify-content: center;
+  color: var(--Stone-600);
+  font-family: var(--Outfit);
+}
+
+header {
+  max-width: 375px;
+  margin: auto;
 }
 
 main {
-  max-width: 375px;
-  padding: 20px;
+  display: flex;
+  margin: auto;
+  flex-flow: column nowrap;
+  max-width: 315px;
   background-color: var(--White);
 }
 
@@ -48,7 +57,7 @@ img {
 
 h1,
 h2 {
-  font-family: YoungSerif;
+  font-family: var(--Young);
   font-weight: 400;
 }
 h1 {
@@ -58,37 +67,65 @@ h2 {
   color: var(--Brown-800);
 }
 
+strong {
+  color: var(--Stone-600);
+  font-weight: 700;
+}
+
 ul {
   list-style: none;
 }
+ul li {
+  position: relative;
+  margin: 7px 0;
+  padding-left: 18px;
+}
 ul li::before {
   content: "\2022";
-  color: var(--Brown-800);
   font-weight: bold;
-  display: inline-block;
-  width: 1em;
-  margin-left: -1em;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 ol li::marker {
   color: var(--Brown-800);
+  font-family: var(--Outfit);
   font-weight: bold;
+}
+
+/* Title */
+#title h1 {
+  margin: 20px 0px;
+  line-height: 2rem;
 }
 
 /* Preparation Section */
 section#prep {
-  background-color: var(--Rose-50);
+  width: 75%;
   padding: 15px;
+  margin: 20px 0px;
+  background-color: var(--Rose-50);
+  border-radius: 5px;
+  align-self: center;
 }
 section#prep p {
   color: var(--Rose-800);
   font-weight: 700;
 }
+
+section#prep ul {
+  list-style: none;
+  padding: 0px 10px;
+}
+
+section#prep ul li {
+  position: relative;
+  margin: 10px 0;
+  padding-left: 20px;
+}
+
 section#prep ul li::before {
-  content: "\2022";
   color: var(--Rose-800);
-  font-weight: bold;
-  display: inline-block;
-  width: 1em;
-  margin-left: -1em;
 }
